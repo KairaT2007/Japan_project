@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/asian-japan-digital-art-4k-sw-1920x1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+body span {
+  font-family: "Anton", sans-serif;
+  font-size: 150px;
+  margin-left: 15vh;
+  letter-spacing: 50px;
+  mix-blend-mode: overlay;
+}
+body .pos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 15vh;
+  color: white;
+  font-size: 80px;
+}
+body .japan_info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-left: 5vh;
+  color: white;
+  width: 380px;
+  margin-top: 40px;
+}
+body .japan_info__flag {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 380px;
+  height: 340px;
+}
+body .japan_info__flag__image {
+  height: 50%;
+}
+body .japan_info__flag__image img {
+  width: 225px;
+}
+body .japan_info__flag__text {
+  width: 350px;
+}
+body .japan_info__crest {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 380px;
+  height: 340px;
+}
+body .japan_info__crest__image {
+  height: 50%;
+}
+body .japan_info__crest__image img {
+  width: 150px;
+}
+body .japan_info__crest__text {
+  width: 350px;
+}
+body .yen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin-left: 90px;
+  margin-top: 50px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+body .yen__image img {
+  width: 410px;
+  height: 190px;
+}
+body .yen__text {
+  color: white;
+  margin: 20px 20px 20px 30px;
+  font-family: "Manrope", sans-serif;
+}
+body .yen__text p {
+  font-size: 16px;
+}
+
+@-webkit-keyframes fall {
+  0% {
+    opacity: 0.9;
+    top: 0;
+  }
+  100% {
+    opacity: 0.2;
+    top: 100%;
+  }
+}
+@keyframes fall {
+  0% {
+    opacity: 0.9;
+    top: 0;
+  }
+  100% {
+    opacity: 0.2;
+    top: 100%;
+  }
+}
+@-webkit-keyframes blow-soft-left {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -50%;
+  }
+}
+@keyframes blow-soft-left {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -50%;
+  }
+}
+@-webkit-keyframes blow-medium-left {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@keyframes blow-medium-left {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@-webkit-keyframes blow-soft-right {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 50%;
+  }
+}
+@keyframes blow-soft-right {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 50%;
+  }
+}
+@-webkit-keyframes blow-medium-right {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@-webkit-keyframes blow-medium-lerightft {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@keyframes blow-medium-lerightft {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@keyframes blow-medium-right {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@-webkit-keyframes sway-0 {
+  0% {
+    -webkit-transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(28deg);
+  }
+  100% {
+    -webkit-transform: rotate(3deg);
+  }
+}
+@keyframes sway-0 {
+  0% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(28deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+@-webkit-keyframes sway-1 {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  40% {
+    -webkit-transform: rotate(43deg);
+  }
+  100% {
+    -webkit-transform: rotate(15deg);
+  }
+}
+@keyframes sway-1 {
+  0% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(43deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+@-webkit-keyframes sway-2 {
+  0% {
+    -webkit-transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(56deg);
+  }
+  100% {
+    -webkit-transform: rotate(22deg);
+  }
+}
+@keyframes sway-2 {
+  0% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(56deg);
+  }
+  100% {
+    transform: rotate(22deg);
+  }
+}
+@-webkit-keyframes sway-3 {
+  0% {
+    -webkit-transform: rotate(25deg);
+  }
+  40% {
+    -webkit-transform: rotate(74deg);
+  }
+  100% {
+    -webkit-transform: rotate(37deg);
+  }
+}
+@keyframes sway-3 {
+  0% {
+    transform: rotate(25deg);
+  }
+  40% {
+    transform: rotate(74deg);
+  }
+  100% {
+    transform: rotate(37deg);
+  }
+}
+@-webkit-keyframes sway-4 {
+  0% {
+    -webkit-transform: rotate(40deg);
+  }
+  40% {
+    -webkit-transform: rotate(68deg);
+  }
+  100% {
+    -webkit-transform: rotate(25deg);
+  }
+}
+@keyframes sway-4 {
+  0% {
+    transform: rotate(40deg);
+  }
+  40% {
+    transform: rotate(68deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+@-webkit-keyframes sway-5 {
+  0% {
+    -webkit-transform: rotate(50deg);
+  }
+  40% {
+    -webkit-transform: rotate(78deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+  }
+}
+@keyframes sway-5 {
+  0% {
+    transform: rotate(50deg);
+  }
+  40% {
+    transform: rotate(78deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+@-webkit-keyframes sway-6 {
+  0% {
+    -webkit-transform: rotate(65deg);
+  }
+  40% {
+    -webkit-transform: rotate(92deg);
+  }
+  100% {
+    -webkit-transform: rotate(58deg);
+  }
+}
+@keyframes sway-6 {
+  0% {
+    transform: rotate(65deg);
+  }
+  40% {
+    transform: rotate(92deg);
+  }
+  100% {
+    transform: rotate(58deg);
+  }
+}
+@-webkit-keyframes sway-7 {
+  0% {
+    -webkit-transform: rotate(72deg);
+  }
+  40% {
+    -webkit-transform: rotate(118deg);
+  }
+  100% {
+    -webkit-transform: rotate(68deg);
+  }
+}
+@keyframes sway-7 {
+  0% {
+    transform: rotate(72deg);
+  }
+  40% {
+    transform: rotate(118deg);
+  }
+  100% {
+    transform: rotate(68deg);
+  }
+}
+@-webkit-keyframes sway-8 {
+  0% {
+    -webkit-transform: rotate(94deg);
+  }
+  40% {
+    -webkit-transform: rotate(136deg);
+  }
+  100% {
+    -webkit-transform: rotate(82deg);
+  }
+}
+@keyframes sway-8 {
+  0% {
+    transform: rotate(94deg);
+  }
+  40% {
+    transform: rotate(136deg);
+  }
+  100% {
+    transform: rotate(82deg);
+  }
+}
+.sakura {
+  background: linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
+  border-radius: 12px 1px;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */
