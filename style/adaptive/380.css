@@ -1,0 +1,29 @@
+@media screen and (max-width: 380px) {
+    body .text-bloc span {
+        font-size: 30px;
+    }
+
+    body .parallax1 span {
+        font-size: 50px;
+        letter-spacing: 15px;
+    }
+
+    body .parallax2 .cur .cur-box select {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    body .parallax2 .cur .cur-box input {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    body .parallax2 .yen {
+        width: 270px;
+        padding: 8px 8px;
+    }
+
+    body .parallax1 .japan_info {
+        width: 310px;
+    }
+}

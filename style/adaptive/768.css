@@ -1,0 +1,116 @@
+@media screen and (max-width: 768px) {
+
+    body .parallax1 span {
+        font-size: 100px;
+        margin-left: 5vh;
+        letter-spacing: 35px;
+    }
+
+    body .parallax1 .pos {
+        font-size: 50px;
+    }
+
+    body .parallax1 .japan_info__flag {
+        width: 240px;
+        height: 280px;
+    }
+
+    body .parallax1 .japan_info__flag__text {
+        width: 240px;
+        font-size: 12px;
+    }
+
+    body .parallax1 .japan_info__crest {
+        width: 240px;
+        height: 280px;
+    }
+
+    body .parallax1 .japan_info__crest__image img {
+        width: 100px;
+    }
+
+    body .parallax1 .japan_info__flag__image img {
+        width: 160px;
+    }
+
+    body .parallax1 .japan_info__crest__text {
+        width: 240px;
+        font-size: 11.6px;
+    }
+
+    body .parallax1 .japan_info__crest__image {
+        height: 45%;
+    }
+
+    body .parallax1 .japan_info__flag__image {
+        height: 45%;
+    }
+
+    body .parallax2 .yen__image img {
+        width: 190px;
+    }
+
+    body .parallax2 .yen__text p {
+        font-size: 14px;
+    }
+
+    body .parallax2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    body .parallax2 .yen {
+        margin-left: 0px;
+        width: 350px;
+        position: static;
+    }
+
+    body .parallax2 .cur {
+        position: static;
+    }
+
+    body .parallax2 .cur .cur-box input {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    body .parallax2 .cur .cur-box select {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    body .parallax3 {
+        background-image: url(/assets/thumb-1920-593270.jpg);
+        color: white;
+    }
+    
+    body .parallax3 .author__real ul li i {
+        font-size: 14px;
+        color: aliceblue;
+    }
+
+    body .parallax3 .author {
+        top: 25%;
+        gap: 150px;
+    }
+
+    body .parallax3 .author__real ul li {
+        font-size: 14px;
+    }
+
+    body .parallax3 .author__real {
+        padding: 10px 10px;
+        width: 320px;
+    }
+
+    body .parallax3 .author__fake {
+        padding: 15px 15px;
+    }
+
+    body .parallax3 .author__fake ul li {
+        font-size: 14px;
+    }
+}

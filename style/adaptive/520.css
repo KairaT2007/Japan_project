@@ -1,0 +1,40 @@
+@media screen and (max-width: 520px) {
+    body .parallax2 .yen__image img {
+        width: 120px;
+    }
+
+    body .parallax2 .yen__image img:last-child {
+        width: 100px;
+    }
+
+    body .parallax2 .yen {
+        width: 290px;
+        padding: 11px 13px
+    }
+
+    body .parallax2 .yen__text p {
+        font-size: 10px;
+    }
+
+    body .parallax1 .pos {
+        display: none;
+    }
+
+    body .parallax1 span {
+        font-size: 70px;
+        margin-left: 0vh;
+        letter-spacing: 15px;
+    }
+
+    body .parallax1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .parallax3 .author__real {
+        padding: 5px 5px;
+        width: 275px;
+    }
+}
