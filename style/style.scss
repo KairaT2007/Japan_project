@@ -7,7 +7,7 @@
 }
 
 a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
 }
@@ -245,10 +245,18 @@ body {
                 ul {
                     li {
                         font-size: 18px;
+                        text-align: center;
 
                         i {
                             font-size: 22px;
                         }
+                    }
+
+                    #n1 {
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 16px;
+                        margin-bottom: 7px;
                     }
                 }
             }

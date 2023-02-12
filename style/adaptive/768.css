@@ -83,7 +83,7 @@
     }
 
     body .parallax3 {
-        background-image: url(/assets/thumb-1920-593270.jpg);
+        background-image: url(/assets/Japan\ 2020.jpeg);
         color: white;
     }
     
@@ -112,5 +112,9 @@
 
     body .parallax3 .author__fake ul li {
         font-size: 14px;
+    }
+
+    body .parallax1 .japan_info {
+        color: black;
     }
 }
