@@ -37,4 +37,18 @@
         padding: 5px 5px;
         width: 275px;
     }
+
+    body .parallax1 {
+        background-image: url(/assets/japan.jpeg);
+    }
+
+    body .parallax2 {
+        background-image: url(/assets/Omoide\ Yokocho\ in\ Autumn\ Tokyo\ Japan.jpeg);
+    }
+
+
+    body .section-background {
+        background-attachment: local;
+    }
+    
 }
