@@ -5,20 +5,46 @@
   padding: 0;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
-  background-image: url(/assets/asian-japan-digital-art-4k-sw-1920x1080.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   overflow-x: hidden;
 }
-body span {
+body .text-bloc {
+  background-color: black;
+}
+body .text-bloc span {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+}
+body .section-background {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+body .parallax1 {
+  background-image: url(/assets/p1.jpg);
+}
+body .parallax1 span {
   font-family: "Anton", sans-serif;
   font-size: 150px;
   margin-left: 15vh;
   letter-spacing: 50px;
   mix-blend-mode: overlay;
 }
-body .pos {
+body .parallax1 .pos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +54,7 @@ body .pos {
   color: white;
   font-size: 80px;
 }
-body .japan_info {
+body .parallax1 .japan_info {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -38,7 +64,7 @@ body .japan_info {
   width: 380px;
   margin-top: 40px;
 }
-body .japan_info__flag {
+body .parallax1 .japan_info__flag {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -50,16 +76,16 @@ body .japan_info__flag {
   width: 380px;
   height: 340px;
 }
-body .japan_info__flag__image {
+body .parallax1 .japan_info__flag__image {
   height: 50%;
 }
-body .japan_info__flag__image img {
+body .parallax1 .japan_info__flag__image img {
   width: 225px;
 }
-body .japan_info__flag__text {
+body .parallax1 .japan_info__flag__text {
   width: 350px;
 }
-body .japan_info__crest {
+body .parallax1 .japan_info__crest {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -71,40 +97,138 @@ body .japan_info__crest {
   width: 380px;
   height: 340px;
 }
-body .japan_info__crest__image {
+body .parallax1 .japan_info__crest__image {
   height: 50%;
 }
-body .japan_info__crest__image img {
+body .parallax1 .japan_info__crest__image img {
   width: 150px;
 }
-body .japan_info__crest__text {
+body .parallax1 .japan_info__crest__text {
   width: 350px;
 }
-body .yen {
+body .parallax2 {
+  background-image: url(/assets/p2.jpg);
+  position: relative;
+}
+body .parallax2 .yen {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  width: 400px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  margin-left: 20vh;
+  top: 15vh;
+  padding: 15px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+body .parallax2 .yen__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .parallax2 .yen__image img {
+  width: 225px;
+}
+body .parallax2 .yen__image img:last-child {
+  width: 200px;
+}
+body .parallax2 .yen__text p {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+body .parallax2 .cur {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 600px;
-  margin-left: 90px;
-  margin-top: 50px;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  gap: 15px;
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: 1000;
 }
-body .yen__image img {
-  width: 410px;
-  height: 190px;
+body .parallax2 .cur .cur-box select {
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
 }
-body .yen__text {
-  color: white;
-  margin: 20px 20px 20px 30px;
-  font-family: "Manrope", sans-serif;
+body .parallax2 .cur .cur-box input {
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
 }
-body .yen__text p {
+body .parallax2 .cur .change-box p {
+  color: #fff;
+}
+body .parallax3 {
+  background-image: url(/assets/p3.jpeg);
+  position: relative;
+}
+body .parallax3 .author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+  position: absolute;
+  top: 30%;
+  gap: 660px;
+}
+body .parallax3 .author__real {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px 30px;
+  z-index: 999;
+}
+body .parallax3 .author__real h2 {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+  mix-blend-mode: overlay;
+  margin-bottom: 7px;
+}
+body .parallax3 .author__real ul li {
+  font-size: 18px;
+}
+body .parallax3 .author__real ul li i {
+  font-size: 22px;
+}
+body .parallax3 .author__fake {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px 40px;
+}
+body .parallax3 .author__fake h2 {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+  mix-blend-mode: overlay;
+  margin-bottom: 7px;
+}
+body .parallax3 .author__fake ul li {
   font-size: 16px;
 }
 
 .parent {
-  position: absolute;
+  position: fixed;
   left: -20px;
   top: 0;
   right: 0;
@@ -112,6 +236,7 @@ body .yen__text p {
   height: 100vh;
   overflow: hidden;
   perspective: 1000px;
+  z-index: 998;
 }
 
 .petal {

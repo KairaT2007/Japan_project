@@ -6,125 +6,280 @@
     padding: 0;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
 body {
-    background-image: url(/assets/asian-japan-digital-art-4k-sw-1920x1080.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
     overflow-x: hidden;
 
-    span {
-        font-family: 'Anton', sans-serif;
-        font-size: 150px;
-        margin-left: 15vh;
-        letter-spacing: 50px;
-        mix-blend-mode: overlay;
+    .text-bloc {
+        background-color: black;
+
+        span {
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            color: #fff;
+        }
     }
 
-    .pos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        right: 10px;
-        top: 15vh;
 
-        color: white;
-        font-size: 80px;
+    .section-background {
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
     }
 
-    .japan_info {
+    .parallax1 {
+        background-image: url(/assets/p1.jpg);
 
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 30px;
-        margin-left: 5vh;
-        color: white;
-        width: 380px;
-        margin-top: 40px;
+        span {
+            font-family: 'Anton', sans-serif;
+            font-size: 150px;
+            margin-left: 15vh;
+            letter-spacing: 50px;
+            mix-blend-mode: overlay;
+        }
 
-        &__flag {
+        .pos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            right: 10px;
+            top: 15vh;
+
+            color: white;
+            font-size: 80px;
+        }
+
+        .japan_info {
+
             display: flex;
             align-items: center;
+            justify-content: flex-start;
+            gap: 30px;
+            margin-left: 5vh;
+            color: white;
+            width: 380px;
+            margin-top: 40px;
+
+            &__flag {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                backdrop-filter: blur(5px);
+                padding: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.300);
+                border-radius: 10px;
+                width: 380px;
+                height: 340px;
+
+
+
+
+                &__image {
+                    height: 50%;
+
+                    img {
+                        width: 225px;
+                    }
+                }
+
+                &__text {
+                    width: 350px;
+                }
+            }
+
+            &__crest {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                backdrop-filter: blur(5px);
+                padding: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.300);
+                border-radius: 10px;
+                width: 380px;
+                height: 340px;
+
+
+                &__image {
+                    height: 50%;
+
+                    img {
+                        width: 150px;
+
+                    }
+                }
+
+                &__text {
+                    width: 350px;
+                }
+            }
+        }
+    }
+
+    .parallax2 {
+        background-image: url(/assets/p2.jpg);
+        position: relative;
+
+        .yen {
+            position: absolute;
+            display: flex;
             flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            width: 400px;
             backdrop-filter: blur(5px);
-            padding: 10px;
+            margin-left: 20vh;
+            top: 15vh;
+            padding: 15px 30px;
             border: 1px solid rgba(0, 0, 0, 0.300);
             border-radius: 10px;
-            width: 380px;
-            height: 340px;
-
-
-
 
             &__image {
-                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
                 img {
                     width: 225px;
                 }
-            }
 
-            &__text {
-                width: 350px;
-            }
-        }
-
-        &__crest {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            backdrop-filter: blur(5px);
-            padding: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.300);
-            border-radius: 10px;
-            width: 380px;
-            height: 340px;
-
-
-            &__image {
-                height: 50%;
-                img {
-                    width: 150px;
-
+                img:last-child {
+                    width: 200px;
                 }
             }
 
             &__text {
-                width: 350px;
+                p {
+                    font-family: 'Manrope', sans-serif;
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .cur {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+            backdrop-filter: blur(8px);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            font-size: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.300);
+            border-radius: 10px;
+            z-index: 1000;
+
+
+            .cur-box {
+                select {
+                    padding: 15px;
+                    font-size: 18px;
+                    border-radius: 10px;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                input {
+                    padding: 15px;
+                    font-size: 18px;
+                    border-radius: 10px;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+
+            .change-box {
+                p {
+                    color: #fff;
+                }
             }
         }
     }
 
-    .yen {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 600px;
-        margin-left: 90px;
-        margin-top: 50px;
-        backdrop-filter: blur(2px);
+    .parallax3 {
+        background-image: url(/assets/p3.jpeg);
+        position: relative;
 
-        &__image {
-            img {
-                width: 410px;
-                height: 190px;
+        .author {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 50px;
+            position: absolute;
+            top: 30%;
+            gap: 660px;
+
+            &__real {
+                backdrop-filter: blur(5px);
+                border: 1px solid rgba(0, 0, 0, 0.300);
+                border-radius: 10px;
+                padding: 15px 30px;
+                z-index: 999;
+
+                h2 {
+                    text-align: center;
+                    font-family: 'Anton', sans-serif;
+                    letter-spacing: 2px;
+                    mix-blend-mode: overlay;
+                    margin-bottom: 7px;
+
+                }
+
+                ul {
+                    li {
+                        font-size: 18px;
+
+                        i {
+                            font-size: 22px;
+                        }
+                    }
+                }
             }
-        }
 
-        &__text {
-            color: white;
-            margin: 20px 20px 20px 30px;
-            font-family: 'Manrope', sans-serif;
+            &__fake {
+                backdrop-filter: blur(5px);
+                border: 1px solid rgba(0, 0, 0, 0.300);
+                border-radius: 10px;
+                padding: 15px 40px;
 
-            p {
-                font-size: 16px;
+                h2 {
+                    text-align: center;
+                    font-family: 'Anton', sans-serif;
+                    letter-spacing: 2px;
+                    mix-blend-mode: overlay;
+                    margin-bottom: 7px;
+
+                }
+
+                ul {
+                    li {
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }
 }
 
 .parent {
-    position: absolute;
+    position: fixed;
     left: -20px;
     top: 0;
     right: 0;
@@ -132,15 +287,16 @@ body {
     height: 100vh;
     overflow: hidden;
     perspective: 1000px;
-  }
-  
-  .petal {
+    z-index: 998;
+}
+
+.petal {
     margin: 1px;
     animation: fall1 10s linear infinite;
     position: absolute;
     top: 0;
     left: 0;
-  
+
     background: #fe85c0;
     width: 10px;
     height: 10px;
@@ -148,9 +304,9 @@ body {
     border-radius: 15px 5px 15px 0px;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-  }
-  
-  .petal::after {
+}
+
+.petal::after {
     content: "";
     right: 0px;
     bottom: 0px;
@@ -162,157 +318,106 @@ body {
     transform: rotateY(180deg);
     transform-style: preserve-3d;
     backface-visibility: hidden;
-  }
-  
-  .petal:nth-child(2) {
+}
+
+.petal:nth-child(2) {
     animation-name: fall2;
     animation-delay: 1.25s;
     top: 10%;
-  }
-  .petal:nth-child(3) {
+}
+
+.petal:nth-child(3) {
     animation-name: fall3;
     animation-delay: 3.65s;
     top: 25%;
-  }
-  .petal:nth-child(4) {
+}
+
+.petal:nth-child(4) {
     animation-name: fall4;
     animation-delay: 8.15s;
     top: 30%;
-  }
-  .petal:nth-child(5) {
+}
+
+.petal:nth-child(5) {
     animation-name: fall5;
     animation-delay: 5.35s;
     top: 50%;
-  }
-  .petal:nth-child(6) {
+}
+
+.petal:nth-child(6) {
     animation-name: fall6;
     animation-delay: 1.25s;
     top: 75%;
-  }
-  
-  .petal:nth-child(7) {
+}
+
+.petal:nth-child(7) {
     animation-name: fall2;
     animation-delay: 9.25s;
     top: 10%;
-  }
-  .petal:nth-child(8) {
+}
+
+.petal:nth-child(8) {
     animation-name: fall3;
     animation-delay: 2.65s;
     top: 25%;
-  }
-  .petal:nth-child(9) {
+}
+
+.petal:nth-child(9) {
     animation-name: fall4;
     animation-delay: 0.15s;
     top: 30%;
-  }
-  .petal:nth-child(10) {
+}
+
+.petal:nth-child(10) {
     animation-name: fall5;
     animation-delay: 1.25s;
     top: 50%;
-  }
-  .petal:nth-child(11) {
+}
+
+.petal:nth-child(11) {
     animation-name: fall6;
     animation-delay: 0.25s;
     top: 75%;
-  }
-  
-  .petal:nth-child(12) {
+}
+
+.petal:nth-child(12) {
     animation-name: fall6;
     animation-delay: 1.75s;
     top: 85%;
-  }
-  
-  @keyframes fall1 {
+}
+
+@keyframes fall1 {
     to {
-      transform: translateY(200px) translateX(2560px) translateZ(200px)
-        rotate3d(1, 0.25, 0, 320deg);
+        transform: translateY(200px) translateX(2560px) translateZ(200px) rotate3d(1, 0.25, 0, 320deg);
     }
-  }
-  
-  @keyframes fall2 {
+}
+
+@keyframes fall2 {
     to {
-      transform: translateY(150px) translateX(2560px) translateZ(500px)
-        rotate3d(1, 0.25, 0.25, 220deg);
+        transform: translateY(150px) translateX(2560px) translateZ(500px) rotate3d(1, 0.25, 0.25, 220deg);
     }
-  }
-  
-  @keyframes fall3 {
+}
+
+@keyframes fall3 {
     to {
-      transform: translateY(150px) translateX(2560px) translateZ(300px)
-        rotate3d(0.25, 1, 1, 420deg);
+        transform: translateY(150px) translateX(2560px) translateZ(300px) rotate3d(0.25, 1, 1, 420deg);
     }
-  }
-  
-  @keyframes fall4 {
+}
+
+@keyframes fall4 {
     to {
-      transform: translateY(-160px) translateX(2560px) translateZ(-500px)
-        rotate3d(1, 1, 0.25, 720deg);
+        transform: translateY(-160px) translateX(2560px) translateZ(-500px) rotate3d(1, 1, 0.25, 720deg);
     }
-  }
-  
-  @keyframes fall5 {
+}
+
+@keyframes fall5 {
     to {
-      transform: translateY(-200px) translateX(2560px) translateZ(400px)
-        rotate3d(0.25, 1, 0.25, 820deg);
+        transform: translateY(-200px) translateX(2560px) translateZ(400px) rotate3d(0.25, 1, 0.25, 820deg);
     }
-  }
-  
-  @keyframes fall6 {
+}
+
+@keyframes fall6 {
     to {
-      transform: translateY(-300px) translateX(2560px) translateZ(-100px)
-        rotate3d(1, 1, 1, 720deg);
+        transform: translateY(-300px) translateX(2560px) translateZ(-100px) rotate3d(1, 1, 1, 720deg);
     }
-  }
-  
-
-
-// .currency-converter {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     display: flex;
-//     gap: 20px;
-//     align-items: center;
-// }
-
-// .currency-converter .currency-form {
-//     width: 200px;
-//     border: 1px solid #ddd;
-//     border-radius: 10px;
-//     overflow: hidden;
-//     padding: 0px 10px;
-//     background: #fff;
-//     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-// }
-
-// .currency-converter .currency-form input {
-//     width: 100%;
-//     height: 50px;
-//     border: none;
-//     outline: none;
-//     font-size: 25px;
-//     padding: 10px 0px 0px;
-// }
-
-// .currency-converter .currency-form select {
-//     width: 100%;
-//     border: none;
-//     outline: none;
-//     padding: 10px 0px;
-//     background: transparent;
-//     cursor: pointer;
-// }
-
-// .currency-converter .eq {
-//     font-size: 18px;
-//     color: #111;
-// }
-
-// @media(max-width:500px) {
-//     .currency-converter {
-//         width: 200px;
-//         flex-wrap: wrap;
-//         justify-content: center;
-//     }
-// }
+}
